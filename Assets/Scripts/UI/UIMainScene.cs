@@ -29,6 +29,11 @@ public class UIMainScene : MonoBehaviour
         ResourceDB.Init();
     }
 
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     private void OnDestroy()
     {
         Instance = null;
